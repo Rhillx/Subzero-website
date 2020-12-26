@@ -3,8 +3,110 @@ body {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: url("../imgs/back3.jpg") no-repeat center center/cover;
+  background: url("../imgs/back3.jpg") no-repeat fixed center/cover;
+  background-attachment: fixed;
   height: 100vh;
   width: 100%;
+}
+
+body::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 42, 105, 0.7);
+}
+
+header {
+  position: relative;
+  border: none;
+  position: relative;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+header img {
+  position: relative;
+  z-index: 3;
+  margin-right: 30px;
+}
+
+header nav {
+  position: relative;
+  z-index: 3;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+}
+
+header li {
+  margin: 20px;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.spacer {
+  height: 300px;
+}
+
+#about {
+  width: 80vw;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  z-index: 3;
+  margin: auto;
+  background-color: rgba(250, 250, 250, 0.7);
+  padding: 25px;
+}
+
+#more {
+  width: 100%;
+  height: 400px;
+  background-color: green;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,21 @@
+@mixin blackLayover() {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba($color: #002a69, $alpha: .7);
+}
+
+@mixin flexCenter($dir, $seperation) {
+    display: flex;
+    justify-content: $seperation;
+    align-items: center;
+    flex-direction: $dir;
+}
+
+@mixin showOnTop($z) {
+    position: relative;
+    z-index: $z;
+}
