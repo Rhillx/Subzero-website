@@ -1,11 +1,22 @@
-@mixin blackLayover() {
+@mixin subzeroLayover() {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 100%;
     width: 100%;
-    background-color: rgba($color: #002a69, $alpha: .7);
+    background: linear-gradient(#004158, #00091d) no-repeat scroll center/cover;
+    opacity: .8;
+}
+@mixin blueLayover() {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(#00091d) no-repeat scroll center/cover;
+    opacity: .5;
 }
 
 @mixin flexCenter($dir, $seperation) {
