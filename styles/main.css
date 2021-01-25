@@ -130,8 +130,19 @@ div.glacier h1 {
   letter-spacing: 1.2rem;
 }
 
+div.glacier h1 span {
+  background-color: whitesmoke;
+  color: #004158;
+  padding: 1rem;
+  opacity: .7;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
 #about {
-  width: 80vw;
+  width: 60vw;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -183,6 +194,7 @@ div.farm::after {
 
 div.farm h1 {
   color: whitesmoke;
+  padding: 5rem;
 }
 
 #more {
@@ -191,7 +203,7 @@ div.farm h1 {
 }
 
 #more img {
-  padding: 20px;
+  padding: 2rem;
   min-height: 100%;
   width: 100%;
   position: relative;
@@ -221,6 +233,15 @@ div.farm h1 {
   padding: 5rem;
   font-weight: 700;
   font-size: 40px;
+  text-align: center;
+}
+
+#more h1 span {
+  background-color: whitesmoke;
+  color: #004158;
+  padding: 1rem;
+  opacity: .7;
+  text-align: center;
 }
 
 div.cart-img {
@@ -270,6 +291,83 @@ div.cart-img::after {
 .coming-soon h2 {
   letter-spacing: 1.5px;
   text-transform: uppercase;
+}
+
+section#hq {
+  height: 100vh;
+}
+
+section#hq h1 {
+  position: relative;
+  z-index: 3;
+  color: whitesmoke;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  padding: 5rem;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+}
+
+section#hq h1 span {
+  background-color: whitesmoke;
+  color: #004158;
+  padding: 1rem;
+  opacity: .7;
+}
+
+section#hq img {
+  position: relative;
+  z-index: 3;
+  height: 360px;
+}
+
+section#hq div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+  z-index: 3;
+}
+
+section#hq div p {
+  font-size: 22px;
+  text-align: left;
+  line-height: 2rem;
+  letter-spacing: .3px;
+  color: whitesmoke;
+  font-weight: 400;
+  padding: 2rem;
+}
+
+section#hq div ul {
+  list-style: none;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+section#hq div li {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: whitesmoke;
+  padding: 1rem;
+  text-align: center;
+}
+
+section#hq div img {
+  padding: 1rem;
 }
 
 footer {

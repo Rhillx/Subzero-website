@@ -77,11 +77,20 @@ div.glacier{
         text-transform: uppercase;
         color: whitesmoke;
         letter-spacing: 1.2rem;
+
+        span{
+            background-color: whitesmoke;
+            color: #004158;
+            padding: 1rem;
+            opacity: .7;
+            text-align: center;
+            align-self: center;
+        }
     }
 }
 
 #about {
-    width: 80vw;
+    width: 60vw;
     height: auto;
     @include flexCenter(column,
     center);
@@ -114,6 +123,7 @@ div.farm{
 
     h1{
         color: whitesmoke;
+        padding: 5rem;
         // position: fixed;
     }
 
@@ -128,7 +138,7 @@ div.farm{
     
 
     img{
-        padding: 20px;
+        padding: 2rem;
         // margin: 20px;
         min-height: 100%;
         width: 100%;
@@ -145,6 +155,14 @@ div.farm{
         padding: 5rem;
         font-weight: 700;
         font-size: 40px;
+        text-align: center;
+        span{
+            background-color: whitesmoke;
+            color: #004158;
+            padding: 1rem;
+            opacity: .7;
+            text-align: center;
+        }
         
     }
 }
@@ -174,6 +192,74 @@ div.cart-img{
         letter-spacing: 1.5px;
         text-transform: uppercase;
     }
+}
+
+section#hq{
+    height: 100vh;
+
+    h1{
+        @include showOnTop(3);
+        color: whitesmoke;
+        text-transform: uppercase;
+        letter-spacing: 1rem;
+        padding: 5rem;
+        font-weight: 700;
+        font-size: 40px;
+        text-align: center;
+
+        span{
+            background-color: whitesmoke;
+            color: #004158;
+            padding: 1rem;
+            opacity: .7;
+        }
+    }
+
+    img{
+        @include showOnTop(3);
+        height: 360px;
+    }
+
+    // img{
+    //     // transform: scale(-30);
+    //     height: 100px;
+    //     width: 100px;
+    // }
+    div{
+        @include flexCenter(row, space-between);
+        @include showOnTop(3);
+
+
+        p{
+            font-size: 22px;
+            text-align: left;
+            line-height: 2rem;
+            letter-spacing: .3px;
+            color: whitesmoke;
+            font-weight: 400;
+            padding: 2rem;
+            
+        }
+
+        ul{
+            list-style: none;
+            text-align: center;
+            align-self: center;
+        }
+
+        li{
+            text-decoration: none;
+            text-transform: uppercase;
+            color: whitesmoke;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        img{
+            padding: 1rem;
+        }
+    }
+
 }
 
 footer{
