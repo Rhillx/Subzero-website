@@ -173,6 +173,20 @@ div.glacier h1 span {
   font-weight: 400;
 }
 
+#about a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 24px;
+}
+
+#about a:hover {
+  color: #009e6f;
+}
+
+#about a i {
+  padding: .5rem;
+}
+
 div.farm {
   background: url("../imgs/farm.jpg") no-repeat fixed center center/cover;
   min-height: 500px;
@@ -205,7 +219,7 @@ div.farm h1 {
 #more img {
   padding: 2rem;
   min-height: 100%;
-  width: 100%;
+  width: 90vw;
   position: relative;
   z-index: 3;
   display: -webkit-box;
@@ -343,7 +357,7 @@ section#hq div {
 section#hq div p {
   font-size: 22px;
   text-align: left;
-  line-height: 2rem;
+  line-height: 2.5rem;
   letter-spacing: .3px;
   color: whitesmoke;
   font-weight: 400;
@@ -386,12 +400,16 @@ footer {
           flex-direction: row;
   position: relative;
   z-index: 3;
-  margin-top: 200px;
+  margin: auto;
+  margin-top: 300px;
+  border-top: 1px solid whitesmoke;
+  width: 90vw;
 }
 
 footer span {
   text-align: center;
   color: white;
+  padding: 1rem;
 }
 
 @media screen and (max-width: 767px) {

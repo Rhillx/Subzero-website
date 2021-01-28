@@ -110,6 +110,20 @@ div.glacier{
         color: whitesmoke;
         font-weight: 400;
     }
+
+    a{
+        text-decoration: none;
+        color:whitesmoke;
+        font-size: 24px;
+
+        &:hover{
+            color: #009e6f;
+        }
+
+        i{
+            padding: .5rem;
+        }
+    }
 }
 
 div.farm{
@@ -141,7 +155,7 @@ div.farm{
         padding: 2rem;
         // margin: 20px;
         min-height: 100%;
-        width: 100%;
+        width: 90vw;
         @include showOnTop(3);
         @include flexCenter(column, center);
         margin:auto;
@@ -233,7 +247,7 @@ section#hq{
         p{
             font-size: 22px;
             text-align: left;
-            line-height: 2rem;
+            line-height: 2.5rem;
             letter-spacing: .3px;
             color: whitesmoke;
             font-weight: 400;
@@ -265,11 +279,16 @@ section#hq{
 footer{
     @include flexCenter(row, center);
     @include showOnTop(3);
-    margin-top: 200px;
+    margin: auto;
+    margin-top: 300px;
+    border-top: 1px solid whitesmoke;
+    width: 90vw;
+
     
     span{
         text-align: center;
         color: white;
+        padding: 1rem;
     }
 }
 
