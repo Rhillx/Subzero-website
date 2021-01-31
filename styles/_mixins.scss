@@ -3,9 +3,9 @@
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
+    height: 100vh;
     width: 100%;
-    background: linear-gradient(#004158, #00091d) no-repeat scroll center/cover;
+    background: linear-gradient(#004158, #00091d) no-repeat fixed center/cover;
     opacity: .8;
 }
 @mixin blueLayover() {

@@ -8,61 +8,20 @@ html, body {
     box-sizing: border-box;
     background: url("../imgs/back3.jpg") no-repeat fixed center/cover;
     width: 100%;
-    height: 100%;
-    &::after {
+    height: 100vh;
+    overflow-x: hidden;
+
+    &:after {
         @include subzeroLayover();
     }
-    overflow-x: hidden;
     
 }
 
-
-
-header {
-    position: relative;
-    // background-image: linear-gradient( to right, white, white, $blueLayover);
-    border: none;
-    @include showOnTop(2);
-    @include flexCenter(row,
-    space-around);
-    
-    img {
-        @include showOnTop(3);
-        height: 100px;
-        width: 500px;
-        
-
-        
-    }
-    nav {
-        @include showOnTop(3);
-    }
-    ul {
-        @include flexCenter(row,
-        center);
-        list-style: none;
-    }
-    li {
-        margin: 20px;
-    }
-    a {
-        color: white;
-        text-decoration: none;
-        text-transform: uppercase;
-    }
-}
-
-.spacer {
-    height: 100px;
-}
 
 div.glacier{
-    background: url('../imgs/back3.jpg') no-repeat fixed center center/cover;
     min-height: 100%;
-    @include showOnTop(3);
-    &::after{
-        @include subzeroLayover()
-    }
+    
+    
     @include flexCenter(column, center);
 
     img{
@@ -87,6 +46,55 @@ div.glacier{
             align-self: center;
         }
     }
+}
+
+div.subscribe{
+    width: 100%;
+    height: auto;
+    @include showOnTop(3);
+    @include flexCenter(column, center);
+
+    h3{
+        font-size: 22px;
+        text-align: center;
+        line-height: 3rem;
+        letter-spacing: .3px;
+        color: whitesmoke;
+        font-weight: 400;
+    }
+    
+    form{
+        width: 100%;
+        padding: 1rem;
+        @include flexCenter(row, center);
+    }
+
+    input{
+        
+        width: 50%;
+        padding: 1rem;
+        border-radius: 30px 0 0 30px;
+        border: none;
+        font-size: 20px;
+        text-align: center;
+
+        &:focus{
+            outline: none;
+        }
+    }
+    button{
+       width: 20%;
+        background-color: #004158;
+        color: whitesmoke;
+        padding: 1rem;
+        border-radius: 0px 30px 30px 0px;
+        border: none;
+        font-size: 20px;
+
+        
+        
+    }
+
 }
 
 #about {
@@ -149,16 +157,17 @@ div.farm{
     width: 100%;
     height: auto;
     
+
+    img.mobile{
+        display: none;
+    }
     
 
     img{
         padding: 2rem;
-        // margin: 20px;
-        min-height: 100%;
         width: 90vw;
         @include showOnTop(3);
         @include flexCenter(column, center);
-        margin:auto;
     }
 
     h1{
@@ -209,7 +218,7 @@ div.cart-img{
 }
 
 section#hq{
-    height: 100vh;
+    height: auto;
 
     h1{
         @include showOnTop(3);
@@ -232,13 +241,13 @@ section#hq{
     img{
         @include showOnTop(3);
         height: 360px;
+        
+        &:after{
+            @include blueLayover();
+        }
     }
 
-    // img{
-    //     // transform: scale(-30);
-    //     height: 100px;
-    //     width: 100px;
-    // }
+   
     div{
         @include flexCenter(row, space-between);
         @include showOnTop(3);
@@ -279,10 +288,13 @@ section#hq{
 footer{
     @include flexCenter(row, center);
     @include showOnTop(3);
-    margin: auto;
-    margin-top: 300px;
-    border-top: 1px solid whitesmoke;
-    width: 90vw;
+    position: relative;
+        bottom: 0;
+        text-align: center;
+        border-top: 1px solid whitesmoke;
+        width: 100%;
+        padding: .5rem;
+        margin-top: .5rem;
 
     
     span{
@@ -293,16 +305,135 @@ footer{
 }
 
 
+
+
 @media screen and (max-width: 767px){
- 
-    header{
-        padding: 30px;
-        img{
-        height: 100px;
-        width: 100%;
-        // margin: 50px;
+
+    html{
+        margin: 0;
     }
+
+    div.glacier{
+        padding: 1rem;
+
+        img{
+            height: 100px;
+            width: 100%;
+        }
+
+        h1{
+            text-align: center;
+            font-size: 30px;
+        }
+
 }
+
+    div.subscribe{
+        h3{
+            font-size: 20px;
+            line-height: 2rem;
+            width: 80vw;
+        }
+
+        input{
+            font-size: 16px;
+        }
+        button{
+            font-size: 16px;
+            width: auto;
+        }
+    }
+
+
+    section#more{
+
+        
+
+        h1{
+            text-align: center;
+            font-size: 30px;
+            padding: 3rem;
+        }
+
+        img.mobile{
+            display: block;
+            width: 90vw;
+            padding: 1rem;
+            margin: 0;
+        }
+
+        img.desktop{
+            display: none;
+        }
+    }
+
+    #about{
+        p{
+            font-size: 20px;
+            line-height: 2rem;
+            width: 80vw;
+        }
+
+        a{
+            font-size: 16px;
+        }
+    }
+
+    div.farm{
+        background-attachment: scroll;
+        
+        h1{
+            color: whitesmoke;
+            @include showOnTop(3);
+            align-self: flex-start;
+        }
+    }
+
+    div.cart-img{
+        background-attachment: scroll;
+    }
+
+    section#hq{
+
+        height: auto;
+
+        h1{
+            text-align: center;
+            font-size: 30px;
+            padding: 1rem;
+        }
+
+        div.top{
+            @include flexCenter(column, center);
+
+            p{
+                text-align: center;
+            }
+        }
+        div.bottom{
+            @include flexCenter(column, center);
+            text-align: center;
+
+            ul{
+                padding: 0;
+            }
+
+            img.pkg{
+                display: none;
+            }
+
+            img.approval{
+                height: 220px;
+                width: 240px;
+            }
+        }
+
+
+    }
+
+    
+
+
     div.coming-soon{
         h1{
             font-size: 30px;
@@ -315,6 +446,10 @@ footer{
     }
 
     footer{
-        margin-top: 200px;
+        position: relative;
+        bottom: 0;
+        margin: 0px;
+        margin-right: 0;
+        text-align: center;
     }
 }
