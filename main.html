@@ -22,10 +22,13 @@
 
     <div class="subscribe">
         <h3>Subscribe Now, and be first to hear about new products and infused goodies at launch.</h3>
-        <form action="">
+        
+        <div>
+
             <input type="email" name="email" id="email" placeholder="Whats your email?...">
-            <button type="submit">Subscribe</button>
-        </form>
+            <button id='subscribe' type="submit">Subscribe</button>
+        </div>
+        
         <p id="validator-text"></p>
     </div>
     
@@ -89,6 +92,15 @@ Northern California.
     <footer>
         <span>Copyright &copy; Subzero Xtracts - {RLX 2020}</span>
     </footer>
-</body>
+
+
+
+    
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-firestore.js"></script>
+    <script type="module" src="/js/app.js"></script>
+   
+    </body>
 
 </html>

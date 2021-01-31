@@ -63,7 +63,7 @@ div.subscribe{
         font-weight: 400;
     }
     
-    form{
+    div{
         width: 100%;
         padding: 1rem;
         @include flexCenter(row, center);
@@ -93,6 +93,26 @@ div.subscribe{
 
         
         
+    }
+    p#validator-text.valid{
+
+        font-size: 22px;
+        color: greenyellow;
+        text-align: center;
+        /* text-transform: uppercase; */
+        font-style: italic;
+        position: relative;
+        z-index: 10;
+
+    }
+    
+p#validator-text.invalid {
+        font-size: 22px;
+        color: red;
+        text-align: center;
+        font-style: italic;
+        position: relative;
+        z-index: 10;
     }
 
 }
@@ -329,6 +349,7 @@ footer{
 }
 
     div.subscribe{
+        
         h3{
             font-size: 20px;
             line-height: 2rem;
@@ -342,7 +363,14 @@ footer{
             font-size: 16px;
             width: auto;
         }
-    }
+
+        p#validator-text{
+            padding: 1rem;
+        }
+        
+        
+            
+        }
 
 
     section#more{
@@ -408,6 +436,13 @@ footer{
 
             p{
                 text-align: center;
+            }
+
+            img{
+                
+                &::after{
+                    @include blueLayover();
+                }
             }
         }
         div.bottom{

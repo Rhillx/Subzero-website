@@ -93,7 +93,7 @@ div.subscribe h3 {
   font-weight: 400;
 }
 
-div.subscribe form {
+div.subscribe div {
   width: 100%;
   padding: 1rem;
   display: -webkit-box;
@@ -132,6 +132,25 @@ div.subscribe button {
   border-radius: 0px 30px 30px 0px;
   border: none;
   font-size: 20px;
+}
+
+div.subscribe p#validator-text.valid {
+  font-size: 22px;
+  color: greenyellow;
+  text-align: center;
+  /* text-transform: uppercase; */
+  font-style: italic;
+  position: relative;
+  z-index: 10;
+}
+
+div.subscribe p#validator-text.invalid {
+  font-size: 22px;
+  color: red;
+  text-align: center;
+  font-style: italic;
+  position: relative;
+  z-index: 10;
 }
 
 #about {
@@ -197,6 +216,7 @@ div.farm::after {
   background: -webkit-gradient(linear, left top, left bottom, from(#00091d)) no-repeat scroll center/cover;
   background: linear-gradient(#00091d) no-repeat scroll center/cover;
   opacity: .5;
+  z-index: 10;
 }
 
 div.farm h1 {
@@ -270,6 +290,7 @@ div.cart-img::after {
   background: -webkit-gradient(linear, left top, left bottom, from(#00091d)) no-repeat scroll center/cover;
   background: linear-gradient(#00091d) no-repeat scroll center/cover;
   opacity: .5;
+  z-index: 10;
 }
 
 .coming-soon {
@@ -341,6 +362,7 @@ section#hq img:after {
   background: -webkit-gradient(linear, left top, left bottom, from(#00091d)) no-repeat scroll center/cover;
   background: linear-gradient(#00091d) no-repeat scroll center/cover;
   opacity: .5;
+  z-index: 10;
 }
 
 section#hq div {
@@ -449,6 +471,9 @@ footer span {
     font-size: 16px;
     width: auto;
   }
+  div.subscribe p#validator-text {
+    padding: 1rem;
+  }
   section#more h1 {
     text-align: center;
     font-size: 30px;
@@ -509,6 +534,18 @@ footer span {
   }
   section#hq div.top p {
     text-align: center;
+  }
+  section#hq div.top img::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, from(#00091d)) no-repeat scroll center/cover;
+    background: linear-gradient(#00091d) no-repeat scroll center/cover;
+    opacity: .5;
+    z-index: 10;
   }
   section#hq div.bottom {
     display: -webkit-box;

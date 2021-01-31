@@ -17,6 +17,7 @@
     width: 100%;
     background: linear-gradient(#00091d) no-repeat scroll center/cover;
     opacity: .5;
+    z-index: 10 ;
 }
 
 @mixin flexCenter($dir, $seperation) {
